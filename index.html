@@ -1,12 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kutibxona</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akadem Nashr</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR QISM BOSHI-->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="">
+            <div class="logo">
+              <div class="logo-img">
+                <img src="images/logo.svg" alt="Akadem Nashrning Logosi" />
+              </div>
+            </div>
+          </a>
+          <div class="menu-items">
+            <ul>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Каталлог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">О магазине</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li style="margin-left: 54px">
+                <img src="images/search.svg" class="lupa" alt="cart" />
+                <input type="text" class="navbar-search" placeholder="Поиск" />
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    style="width: 30px; height: 30px"
+                    src="images/Hard.svg"
+                    alt="hard"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    style="margin-left: -24px; width: 30px; height: 30px"
+                    src="images/basket.svg"
+                    alt="hard"
+                  />
+                </a>
+              </li>
+              <li>
+                <select
+                  style="
+                    border: none;
+                    margin-left: -22px;
+                    margin-top: 5px;
+                    background: #e5e5e5;
+                  "
+                >
+                  <option value="0">2 228 грн.</option>
+                  <option value="1">Audi</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <button class="nav-button" id="nav-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="mini-navbar">
+          <div class="menu-items mini-nav hidden" id="mini-navbar">
+            <ul>
+              <li>
+                <a href="#">Bosh sahifa</a>
+              </li>
+              <li>
+                <a href="#">Kitoblar</a>
+              </li>
+              <li>
+                <a href="#">Aksiyalar</a>
+              </li>
+              <li>
+                <a href="#">Kontaktlar</a>
+              </li>
+            </ul>
+            <a class="btn-orange" href="#">Ro'yxatdan o'tish</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR QISMI YAKUNI -->
+
+    <!-- HERO QISMI BOSHI -->
+
+    <section id="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-text">
+            <h1>Киниги от А до Я</h1>
+            <p>
+              В нашем магазине можно найти книгу на любой вкус. Большой
+              ассортимент. Приятные цены. Интересные сюжеты.
+            </p>
+            <a class="btn-orange text-btn" href="">Перейти в каталог</a>
+          </div>
+          <div class="hero-right-content">
+            <div class="hero-contentItem1"></div>
+            <div class="hero-contentItem2"></div>
+            <div class="hero-contentItem3">
+              <div class="hero-image">
+                <img src="images/books.png" alt="Python haqida kitob rasmi" />
+              </div>
+            </div>
+            <div class="hero-contentItem4">
+              <div class="hero-contentItem-content">
+                <h5 class="hero-item-text">Комплект книг Марка Мэнсона</h5>
+                <p class="hero-item-p">
+                  ТОНКОЕ ИСКУССТВО ПОФИГИЗМА. ВСЕ ХРЕНОВО. МУЖСКИЕ ПРАВИЛА.
+                </p>
+                <div style="display: flex; gap: 180px" class="">
+                  <h6 class="hero-item-num">649 грн.</h6>
+                  <img src="images/Right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO QISMI OXIRI -->
+
+    <!-- features qismi -->
+    <section id="features">
+      <div class="container">
+        <div class="featues-items">
+          <span class="features-title">Горячие поступления</span>
+          <span class="features-spans">
+            <span>Фантастика</span>
+            <span>Саморазвитие</span>
+            <span>Доставка</span>
+            <span>Детские</span>
+            <span>Аудиокниги</span>
+            <span>Другие</span>
+          </span>
+          <div class="features-card">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book1.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">300 грн.</h4>
+                      <h6 class="features-description">Порядок в Хаосе</h6>
+                      <p class="features-about">Константин Коптелов</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book2.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">225 грн.</h4>
+                      <h6 class="features-description">Смарагдова книга</h6>
+                      <p class="features-about">Керстин Гир</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book3.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">86 грн.</h4>
+                      <h6 class="features-description">
+                        Зося з вулиці Котячої
+                      </h6>
+                      <p class="features-about">Агнешка Тишка</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book4.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">214 грн.</h4>
+                      <h6 class="features-description">Мотиватор</h6>
+                      <p class="features-about">Наталія Зотова</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book5.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">778 грн.</h4>
+                      <h6 class="features-description">Без маски</h6>
+                      <p class="features-about">Михаил Бурняшев</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+
+            <!-- <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      src="images/book1.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">300 грн.</h4>
+                      <h6 class="features-description">Порядок в Хаосе</h6>
+                      <p class="features-about">Константин Коптелов</p>
+                      <div style="display: flex; gap: 180px" class="">
+                        <h6 class="features-card-item-num">649 грн.</h6>
+                        <img src="images/Right.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+        <div class="featues-items">
+          <div class="featues-text">
+            <span class="features-title__2">Распродажа</span>
+          </div>
+          <div class="features-card">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book1.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">300 грн.</h4>
+                      <h6 class="features-description">Порядок в Хаосе</h6>
+                      <p class="features-about">Константин Коптелов</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book2.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">225 грн.</h4>
+                      <h6 class="features-description">Смарагдова книга</h6>
+                      <p class="features-about">Керстин Гир</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book3.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">86 грн.</h4>
+                      <h6 class="features-description">
+                        Зося з вулиці Котячої
+                      </h6>
+                      <p class="features-about">Агнешка Тишка</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book4.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">214 грн.</h4>
+                      <h6 class="features-description">Мотиватор</h6>
+                      <p class="features-about">Наталія Зотова</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="features-card-item">
+                    <img
+                      class="features-card-item-img"
+                      src="images/book5.png"
+                      alt="Python haqida kitob rasmi"
+                    />
+                    <div class="features-card-item-content">
+                      <h4 class="features-card-item-title">778 грн.</h4>
+                      <h6 class="features-description">Без маски</h6>
+                      <p class="features-about">Михаил Бурняшев</p>
+                      <div class="action">
+                        <button class="features-btn">В корзину</button>
+                        <img
+                          class="features-image"
+                          src="images/Hard.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categoriy">
+      <div class="container">
+        <div class="categoriy-content">
+          <h3 class="caregoriy-title">Каталог</h3>
+          <div class="categoriy-item">
+            <button class="categoriy-btn">Книги</button>
+            <button class="categoriy-btn">Электронные книги</button>
+            <button class="categoriy-btn">Аудиокниги</button>
+            <button class="categoriy-btn">Игрушки, творчество</button>
+            <button class="categoriy-btn">Книжные аксессуарые</button>
+            <button class="categoriy-btn">Блокноты</button>
+            <button class="categoriy-btn">Настольные игрые</button>
+            <button class="categoriy-btn">Подарки</button>
+            <button class="categoriy-btn">Акции</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shopp-about">
+      <div class="container">
+        <div class="shopp-content">
+          <h3 class="caregoriy-title">О магазине</h3>
+          <div class="shopp-content-item">
+            <strong>35</strong><span>Филиалов по всей стране</span>
+            <strong>898</strong> <span>Товаров в каталоге</span>
+            <strong>8659</strong><span>Покупателей</span> <strong>72</strong>
+            <span>Часоа доставка по городам</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div class="container">
+        <div class="delivery-content">
+          <h3 class="caregoriy-title">Доставка</h3>
+          <p>
+            Работаем без праздников и выходных! Жители Киева могут получить
+            заказ уже в день его оформления. Клиенты из других городов Украины
+            могут получить заказ в течение 1-5 дней в<br />
+            зависимости от местонахождения населенного пункта и выбранного
+            способа доставки. Заказы на сумму свыше 1000 грн доставляются
+            бесплатно*. Доступные способы, точные сроки и <br />
+            стоимость доставки Вы можете увидеть во время оформления заказа в
+            корзине заказа, после выбора города доставки. <br />
+          </p>
+          <strong>Подробнее</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="networks">
+      <div class="container">
+        <div class="networks-content">
+          <h3 class="caregoriy-title">Следите за нами в социальных сетях</h3>
+          <div class="networks-item">
+            <div class="network-item">
+              <img src="images/fack.svg" alt="" />
+              <img src="images/tw.svg" alt="" />
+              <img src="images/wtp.svg" alt="" />
+              <img src="images/insta.svg" alt="" />
+              <img src="images/yube.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-bobur">
+          <div class="footer__list bobur6">
+            <div class="logo-img">
+              <img src="images/logo.svg" alt="Akadem Nashrning Logosi" />
+            </div>
+          </div>
+          <div class="list bobur6">
+            <ul>
+              <li class="bobur7">Популярное</li>
+              <li class="bobur7">Программирование</li>
+              <li class="bobur7">Книги для детей</li>
+              <li class="bobur7">Психология</li>
+              <li class="bobur7">Бизнес</li>
+            </ul>
+          </div>
+          <div class="list bobur6">
+            <ul>
+              <li class="bobur7">Информация</li>
+              <li class="bobur7">Доставка</li>
+              <li class="bobur7">Оплата</li>
+              <li class="bobur7">O магазине</li>
+            </ul>
+          </div>
+          <div class="list bobur6">
+            <ul>
+              <li class="bobur7">Помощь</li>
+              <li class="bobur7">Контакты</li>
+              <li class="bobur7">Возврат товара</li>
+              <li class="bobur7">Помощь покупателю</li>
+            </ul>
+          </div>
+          <!-- <div class="btn-list bobur6">
+            <p>
+              Все права защищены © 2003-2021 БИБЛИОТЕЧНАЯ Условия использования
+              | Политика конфиденциальности
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- javaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
