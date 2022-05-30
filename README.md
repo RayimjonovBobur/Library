@@ -1,9 +1,15 @@
-# akademnashr
-Bu sayt AkademNashrnign clone web satyi. Figmadagi holatiga qarab yatilingan.
+# Yangi Avlod
 
+Bu sayt Yangi Avlod sralash bosqichi uchun yaratildi. Figmadagi holatiga qarab yatilingan.Muhliflik huquqlari buzilmasin !
 
-#Figma
-https://www.figma.com/file/5SGczZFGsw9esC4pXKUCom/Akademnashr-promo-sayt?node-id=28%3A4
+# Muhlif
 
-#Telegram
-https://t.me/akhror_web
+# <<<<<<< BoburDev  >>>>>>> 
+
+# Figma >>>
+
+https://www.figma.com/file/VKYoLaS6toZg1AIwUuWZwG/Landing-page-bookstore-(Community)?node-id=1%3A127
+
+# Telegram >>>
+
+https://t.me/Boburbek_Rayimjonov
