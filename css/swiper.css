@@ -110,3 +110,14 @@
   top: 160px;
 }
 
+.swiper-horizontal > .swiper-scrollbar {
+  position: absolute;
+  bottom: 3px;
+  z-index: 999;
+  width: 370px;
+  height: 6px;
+  left: 482px;
+  background: #d7d7d7;
+  justify-content: center;
+  margin: auto;
+}

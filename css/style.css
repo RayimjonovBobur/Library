@@ -46,6 +46,16 @@ body {
   font-family: var(--ff-main);
 }
 
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-top: calc(var(--bs-gutter-y) * -1);
+}
+
 /* umumiy chap va o'ngdan masofani uchlash uchun */
 .container {
   max-width: 128rem;
@@ -724,18 +734,6 @@ body {
   margin-right: 95px;
 }
 
-.swiper-horizontal > .swiper-scrollbar {
-  position: absolute;
-  bottom: 3px;
-  z-index: 999;
-  width: 370px;
-  height: 6px;
-  left: 482px;
-  background: #d7d7d7;
-  justify-content: center;
-  margin: auto;
-}
-
 .featues-text {
   justify-content: center;
   align-items: center;
@@ -760,13 +758,12 @@ body {
   font-weight: 900;
   font-size: 25px;
   line-height: 196.19%;
-  /* identical to box height, or 49px */
-
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   color: #000000;
+  margin-bottom: 2em;
 }
 
 .categoriy-btn {
@@ -791,10 +788,6 @@ body {
 }
 
 .categoriy-item {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-columns: 60px 60px 60px;
-  gap: 200px; */
   width: 952px;
   justify-content: center;
   margin: auto;
@@ -840,20 +833,58 @@ body {
   margin-left: 43px;
 }
 
+.num-box {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.num {
+  color: #241400;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.num-txt {
+  color: #241400;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 196.19%;
+  margin-bottom: 0;
+}
+
+.delivery-btn,
+.delivery-txt {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.delivery-btn a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 196.19%;
+}
+
 .delivery-content {
   text-align: center;
 }
 
 .delivery-content p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 196.19%;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #241400;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 196.19%;
+  text-align: center;
 }
 
 .delivery {
@@ -876,6 +907,16 @@ body {
 .network-item img {
   justify-content: center;
   margin: auto;
+}
+
+.network-list {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 /* Footer */
@@ -957,4 +998,7 @@ body {
   font-weight: 400;
   line-height: 196.19%;
   margin-bottom: 0;
+}
+.features__2 {
+  margin-top: -143px !important;
 }
